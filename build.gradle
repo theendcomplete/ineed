@@ -67,7 +67,7 @@ dependencies {
 
 bootRun {
 //    jvmArgs('-Dspring.output.ansi.enabled=always -Xms512M -Xmx1024M -XX:MaxPermSize=512m')
-    jvmArgs('-Dspring.output.ansi.enabled=always -Xms512M')
+    jvmArgs('-Dspring.output.ansi.enabled=always')
     addResources = true
 }
 
