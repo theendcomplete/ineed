@@ -7,6 +7,8 @@
 <td>${it.store}</td>
 %{--<td>${it.item_status}</td>--}%
 <td>${it.reason}</td>
+<td>${it.company}</td>
+<td>${it.payment_method}</td>
 <td>${it.dateCreated}</td>
 <td>${it.lastUpdated}</td>
 <td align="center">

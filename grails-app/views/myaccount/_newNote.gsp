@@ -66,6 +66,30 @@
                     <span class="help-block">зачем?</span>
                 </div>
             </div>
+
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="reason">Компания</label>
+
+                <div class="col-md-5">
+                    <input id="company" name="company" type="text" placeholder="ООО ОЛБО"
+                           class="form-control input-md">
+                    <span class="help-block">Для какой компании?</span>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="payment_method">Компания</label>
+
+                <div class="col-md-5">
+                    <input id="payment_method" name="payment_method" type="text" placeholder="Безналичный расчет, касса, Ф"
+                           class="form-control input-md">
+                    <span class="help-block">Метод оплаты</span>
+                </div>
+            </div>
+
             <!-- Text input-->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="link">Ссылка</label>

@@ -127,7 +127,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-12" align="center">
+                <div class="col-md-4" align="center">
                     <button id="saveButton" name="saveButton" class="btn btn-primary">Сохранить</button>
                 </div>
             </fieldset>

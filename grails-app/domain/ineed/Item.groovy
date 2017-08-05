@@ -8,6 +8,8 @@ class Item {
     String store
     String item_status
     String reason
+    String company
+    String payment_method
     Date dateCreated
     Date lastUpdated
 
@@ -19,6 +21,8 @@ class Item {
         vendorCode(nullable: true)
         quantity(nullable: true)
         link(nullable: true)
+        company(nullable: true)
+        payment_method(nullable: true)
         store(nullable: true)
         item_status(nullable: true)
         user(nullable: true)

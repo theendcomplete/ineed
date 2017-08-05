@@ -38,6 +38,10 @@ class ItemService {
         if (!updItem.itemList) {
             updItem.item_status = item_status
         }
+        if (item_status.equals("Отменён")) {
+            updItem.item_status = item_status
+            updItem.itemList = null
+        }
         updItem.save()
     }
 }

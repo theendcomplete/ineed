@@ -76,6 +76,39 @@
 
                 <!-- Text input-->
                 <div class="form-group">
+                    <label class="col-md-4 control-label" for="company">Для компании:</label>
+
+                    <div class="col-md-5">
+                        <input id="company" name="company" type="text" placeholder='ООО "ОЛБО"'
+                               class="form-control input-md" value="${item.company}">
+                        <span class="help-block">Для нужд какой компании?</span>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="payment_method">Для компании:</label>
+
+                    <div class="col-md-5">
+                        <input id="payment_method" name="payment_method" type="text" placeholder="Безналичный расчёт, Касса, Федосеев"
+                               class="form-control input-md" value="${item.payment_method}">
+                        <span class="help-block">Как платим?</span>
+                    </div>
+                </div>
+
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="reason">Назначение</label>
+
+                    <div class="col-md-5">
+                        <input id="      " name="reason" type="text" placeholder="например, чтобы измерять углы стола"
+                               class="form-control input-md" value="${item.reason}">
+                        <span class="help-block">зачем?</span>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
                     <label class="col-md-4 control-label" for="reason">Назначение</label>
 
                     <div class="col-md-5">
@@ -84,6 +117,7 @@
                         <span class="help-block">зачем?</span>
                     </div>
                 </div>
+
 
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="dateCreated">Создан</label>
@@ -119,15 +153,16 @@
 
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="cancellItem">Отменить</label>
+                    <label class="col-md-12 control-label" for="cancellItem">Отменить</label>
 
-                    <div class="col-md-12" align="center">
+                    <div class="col-md-4" align="center">
                         <g:checkBox id="cancellItem" name="cancellItem" value="false" checked="false"></g:checkBox>
                         %{--<button id="cancel" name="saveButton" class="btn btn-primary">Сохранить</button>--}%
                     </div>
+
                 </div>
 
-                <div class="col-md-12" align="center">
+                <div class="col-md-6" align="center">
                     <button id="saveButton" name="saveButton" class="btn btn-primary">Сохранить</button>
                 </div>
             </fieldset>

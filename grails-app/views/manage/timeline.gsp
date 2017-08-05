@@ -63,22 +63,23 @@
             <div class="row">
                 <div class="span5">
                     <table class="table  table-condensed">
-                        <thead>
+                    <thead>
                         <tr>
                             <th>CB</th>
                             <th>Наименование</th>
                             <th>Артикул</th>
                             <th>Ссылка</th>
                             <th>Поставщик</th>
-%{--<th>Статус</th>--}%
-    <th>Назначение</th>
-    <th>Дата создания</th>
-    <th>Дата изменения</th>
-    <th>Кому</th>
-    <th>Статус</th>
-    </tr>
-    </thead>
-    <tbody>
+                            <th>Назначение</th>
+                            <th>Компания</th>
+                            <th>Метод оплаты</th>
+                            <th>Дата создания</th>
+                            <th>Дата изменения</th>
+                            <th>Кому</th>
+                            <th>Статус</th>
+                        </tr>
+                       </thead>
+                <tbody>
 
     <g:render template="noteEntries" collection="${itemList}"/>
 

@@ -16,7 +16,7 @@
 
     <div class="h3" align="center">
         %{--<h4 align="center">--}%
-        Изменить запрос
+        ${itemList.toString()}
         %{--</h4>--}%
     </div>
 </p>
@@ -42,48 +42,6 @@
                         <span class="help-block">внутренний id</span>
                     </div>
                 </div>
-                %{--<!-- Text input-->--}%
-                %{--<div class="form-group">--}%
-                %{--<label class="col-md-4 control-label" for="name">Наименование</label>--}%
-
-                %{--<div class="col-md-5">--}%
-                %{--<input id="name" name="name" type="text" placeholder="например, слуховой аппарат"--}%
-                %{--class="form-control input-md" required="" value="${itemList.item_name}" readonly="">--}%
-                %{--<span class="help-block">Вбиваете буковки с клавиатурки</span>--}%
-                %{--</div>--}%
-                %{--</div>--}%
-
-                %{--<!-- Text input-->--}%
-                %{--<div class="form-group">--}%
-                %{--<label class="col-md-4 control-label" for="vendorCode">Артикул</label>--}%
-
-                %{--<div class="col-md-5">--}%
-                %{--<input id="vendorCode" name="vendorCode" type="text" placeholder=""--}%
-                %{--class="form-control input-md" value="${itemList.vendorCode}" readonly="">--}%
-                %{--<span class="help-block">Если не знаете - ничего страшного. Необязательное поле</span>--}%
-                %{--</div>--}%
-                %{--</div>--}%
-
-                %{--<div class="form-group">--}%
-                %{--<label class="col-md-4 control-label" for="quantity">Количество</label>--}%
-
-                %{--<div class="col-md-5">--}%
-                %{--<input id="quantity" name="quantity" type="text" placeholder="Например, 1 шт. или 10 кг"--}%
-                %{--class="form-control input-md" value="${itemList.quantity}" readonly="">--}%
-                %{--<span class="help-block">Требуемое количество</span>--}%
-                %{--</div>--}%
-                %{--</div>--}%
-
-                %{--<!-- Text input-->--}%
-                %{--<div class="form-group">--}%
-                %{--<label class="col-md-4 control-label" for="reason">Назначение</label>--}%
-
-                %{--<div class="col-md-5">--}%
-                %{--<input id="reason" name="reason" type="text" placeholder="например, чтобы измерять углы стола"--}%
-                %{--class="form-control input-md" value="${itemList.reason}">--}%
-                %{--<span class="help-block">зачем?</span>--}%
-                %{--</div>--}%
-                %{--</div>--}%
 
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="dateCreated">Создан</label>
@@ -117,7 +75,6 @@
                                         <th>Артикул</th>
                                         <th>Ссылка</th>
                                         <th>Поставщик</th>
-                                        %{--<th>Статус</th>--}%
                                         <th>Назначение</th>
                                         <th>Дата создания</th>
                                         <th>Дата изменения</th>
@@ -137,32 +94,6 @@
                                                 max="50"/>
                                 </div>
                             </div>
-
-                            %{--<!-- Text input-->--}%
-                            %{--<div class="form-group">--}%
-                            %{--<label class="col-md-4 control-label" for="link">Ссылка</label>--}%
-
-                            %{--<div class="col-md-5">--}%
-                            %{--<input id="link" name="link" type="text"--}%
-                            %{--placeholder="Например, http://paypal.me/theendcomplete/666"--}%
-                            %{--class="form-control input-md" value="${itemList.link}">--}%
-                            %{--<span class="help-block">Ссылка на товар, если уже нашли сами</span>--}%
-                            %{--</div>--}%
-                            %{--</div>--}%
-
-
-                            %{--<div class="form-group">--}%
-                            %{--<label class="col-md-4 control-label" for="cancellItem">Отменить</label>--}%
-
-                            %{--<div class="col-md-12" align="center">--}%
-                            %{--<g:checkBox id="cancellItem" name="cancellItem" value="false" checked="false"></g:checkBox>--}%
-                            %{--<button id="cancel" name="saveButton" class="btn btn-primary">Сохранить</button>--}%
-                            %{--</div>--}%
-                            %{--</div>--}%
-
-                            %{--<div class="col-md-12" align="center">--}%
-                            %{--<button id="saveButton" name="saveButton" class="btn btn-primary">Сохранить</button>--}%
-                            %{--</div>--}%
             </fieldset>
         </div>
     </g:form>
