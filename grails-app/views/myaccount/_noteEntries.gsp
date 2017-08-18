@@ -17,7 +17,6 @@
     %{--params.order = params.order ?: "desc"--}%
     %{--${it.item_status}--}%
 </td>
-</td>
 </tr>
 
 
@@ -32,12 +31,12 @@
         window.location = "/item/show/" + $(this).data("id");
     });
 </script>
-<g:javascript>
-    function clearPost(e) {
-        $('postContent').value = ''
-    }
-    function showSpinner(visible) {
-        $('spinner').style.display = visible ? "inline" : "none"
-    }
+%{--<g:javascript>--}%
+%{--function clearPost(e) {--}%
+%{--$('postContent').value = ''--}%
+%{--}--}%
+%{--function showSpinner(visible) {--}%
+%{--$('spinner').style.display = visible ? "inline" : "none"--}%
+%{--}--}%
 
-</g:javascript>
+%{--</g:javascript>--}%

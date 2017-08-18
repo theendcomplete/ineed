@@ -13,6 +13,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         [pattern: '/**/css/**', access: ['permitAll']],
         [pattern: '/**/images/**', access: ['permitAll']],
         [pattern: '/**/item/**', access: ['permitAll']],
+        [pattern: '/**/api/**', access: ['permitAll']],
         [pattern: '/**/myaccount/**', access: ['ROLE_COMMON']],
         [pattern: '/**/itemList/**', access: ['ROLE_COMMON']],
         [pattern: '/**/manage/**', access: ['ROLE_MANAGER']],

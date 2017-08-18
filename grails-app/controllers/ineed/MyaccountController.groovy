@@ -1,15 +1,17 @@
 package ineed
 
+import grails.plugin.springsecurity.SpringSecurityService
+
 class MyaccountController {
-    def itemService
-    def springSecurityService
+    ItemService itemService
+    SpringSecurityService springSecurityService
 
     def index() {
         redirect(action: 'timeline')
     }
 
     def timeline() {
-        SecUser user = springSecurityService.currentUser
+        def user = springSecurityService.currentUser
         if (user) {
             params.sort = params.sort ?: "dateCreated"
             params.order = params.order ?: "desc"
@@ -23,7 +25,7 @@ class MyaccountController {
     def ajaxAddItem() {
 //        println(params)
         String store = "Комус"
-        def newItem = itemService.createItem(params.name, params.vendorCode, params.quantity, params.link, store, params.reason)
+        Item newItem = itemService.createItem(params.name, params.vendorCode, params.quantity, params.link, store, params.reason)
         flash.message = "Сохранено: ${newItem.item_name}"
         redirect(action: 'timeline')
     }
